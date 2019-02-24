@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="InnovationAndEntrepreneurship.Views.FindDetailControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <ScrollViewer
+        Name="ForegroundElement"
+        VerticalScrollMode="Enabled"
+        HorizontalAlignment="Stretch"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        Padding="{StaticResource DetailPageMargin}">
+        <StackPanel HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <TextBlock
+                    Margin="{StaticResource SmallLeftMargin}"
+                    VerticalAlignment="Center"
+                    Text="{x:Bind MasterMenuItem.PName, Mode=OneWay}"
+                    Style="{ThemeResource TitleTextBlockStyle}" />
+            </StackPanel>
+            <StackPanel Name="block" Padding="0,15,0,0">
+                <TextBlock Text="Project ID" Style="{StaticResource DetailSubTitleStyle}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.PID, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <TextBlock Text="Starting Time" Style="{StaticResource DetailSubTitleStyle}" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.DateB, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <TextBlock Text="Ending Time" Style="{StaticResource DetailSubTitleStyle}" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.DateE, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <TextBlock Text="Classification" Style="{StaticResource DetailSubTitleStyle}" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.PClass, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <TextBlock Text="Prize Winning situation" Style="{StaticResource DetailSubTitleStyle}" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.Win, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <TextBlock Text="NOTE" Style="{StaticResource DetailSubTitleStyle}" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{x:Bind MasterMenuItem.Describle, Mode=TwoWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+
+
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</Source>
+    <SmallTileSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</SmallTileSource>
+    <MediumTileSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</MediumTileSource>
+    <WideTileSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</WideTileSource>
+    <LargeTileSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</LargeTileSource>
+    <AppIconSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</AppIconSource>
+    <SplashScreenSource>C:\Users\huang\Downloads\soutu123.cn_2983517_ä¸å¸¦_æå¾ä¸­å½ç¥æ¨å·¥ä½é¡ºå©.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\huang\Downloads\20yuanxingyinyingtubiao\report.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <UseSimulator>false</UseSimulator>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="InnovationAndEntrepreneurship.Views.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='2' 
+        x:Name="ContentArea"
+        Margin="{StaticResource SmallLeftRightMargin}">
+        <Pivot x:ConnectionId='3'
+            x:Name="Items">
+
+            <PivotItem Header="Project" >
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <!--
+                    The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                    Place your content here.
+                    -->
+                    <StackPanel  Orientation="Vertical">
+
+                        <TextBlock Text="Project Table" FontSize="36" Margin="4" TextAlignment="Center"/>
+                        <TextBlock x:ConnectionId='4' x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
+                        <TextBlock Text="Enter your Data" Margin="0,0,0,10"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                        <TextBox x:ConnectionId='5'  x:Name="IDTextBox"  Header="project id:" Margin="4" Width="250"/>
+                        <TextBox x:ConnectionId='6'  x:Name="NameTextBox" Header="project name:" Margin="4" Width="250"/>
+                        <TextBox x:ConnectionId='7'  x:Name="ClassTextBox"  Header="project id:" Margin="4" Width="250"/>
+                        <TextBox x:ConnectionId='8'  x:Name="BDateTextBox" Header="project name:" Margin="4" Width="250"/>
+                        <TextBox x:ConnectionId='9'  x:Name="EDateTextBox"  Header="project id:" Margin="4" Width="250"/>
+                        <DatePicker x:ConnectionId='10'  x:Name="EDate"  Header="project id:" DayFormat="{}{day.integer} ({dayofweek.abbreviated})" YearVisible="False" HorizontalAlignment="Center" Width="250" />
+                        <TextBox x:ConnectionId='11'  x:Name="WinTextBox" Header="project name:" Margin="4" Width="250"/>
+                       
+
+                        <Button x:ConnectionId='12' x:Name="InsertButton" Content="Insert" Background="DodgerBlue" Foreground="White" Width="80" HorizontalAlignment="Center" Margin="0,20"/>
+
+
+
+                    </StackPanel>
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem x:Uid="Add_PivotItem2">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <!--
+                    The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                    Place your content here.
+                    -->
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
+

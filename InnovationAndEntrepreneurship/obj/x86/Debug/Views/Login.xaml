@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="InnovationAndEntrepreneurship.Views.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InnovationAndEntrepreneurship.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Grid >
+
+        <StackPanel x:ConnectionId='2' x:Name="sp" Orientation="Vertical">
+            <TextBlock FontSize="40"/>
+
+            <TextBlock Text="Login" FontSize="36" Margin="4" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='4' x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
+            <TextBlock Text="Enter your username and password below" Margin="0,0,0,10"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:ConnectionId='5'  Header="Username" x:Name="UsernameTextBox" Margin="4" Width="250"/>
+
+            <PasswordBox x:ConnectionId='6' Header="Password" x:Name="PasswordsTextBox" Margin="4" Width="250"/>
+            <Button x:ConnectionId='7' x:Name="PassportSignInButton" Content="Login" Background="DodgerBlue" Foreground="White"
+                                           Width="80" HorizontalAlignment="Center" Margin="0,20"/>
+
+        </StackPanel>
+        <Frame x:ConnectionId='3' x:Name="LoginFrame" />
+    </Grid>
+
+</Page>
+
